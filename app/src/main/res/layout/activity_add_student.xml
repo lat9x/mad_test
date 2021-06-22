@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".AddStudentActivity">
+
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/edtStudentDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentName"
+        android:hint="dob" />
+
+    <EditText
+        android:id="@+id/edtStudentTown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentDob"
+        android:hint="town" />
+
+    <EditText
+        android:id="@+id/edtStudentYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentTown"
+        android:hint="year" />
+
+    <Button
+        android:id="@+id/btnAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentYear"
+        android:layout_centerHorizontal="true"
+        android:text="Add" />
+
+</RelativeLayout>
